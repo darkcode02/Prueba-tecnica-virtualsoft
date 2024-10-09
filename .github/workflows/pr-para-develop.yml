@@ -1,0 +1,22 @@
+name: verificar sintaxis README.md en PR hacia develop
+on:
+  pull_request:
+    branches:
+      - develop 
+
+jobs:
+  check-readme-syntax:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Verify README.md syntax
+        run: |
+          if [ -f README.md ]; then
+            echo "revisando el archivo README.md"
+            grep -q '[a-zA-Z]' README.md || (echo "README.md syntax invalid" && exit 1)
+            echo "README.md syntax is valid"
+          else
+            echo "No README.md file found, skipping."
