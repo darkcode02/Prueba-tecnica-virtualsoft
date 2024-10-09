@@ -1,0 +1,1 @@
+Solución a un bug crítico encontrado en producción
