@@ -1,1 +1,1 @@
-def imprimir-nombre(name): return nombre
+def imprime-nombre(name): return nombre
