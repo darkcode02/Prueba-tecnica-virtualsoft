@@ -1,1 +1,6 @@
-Esta es una modificacion de prueba para probar la proteccion de main hecha por Juan Pablo arias betancur
+
+# Prueba-tecnica-virtualsoft
+
+## Descripción                                                                          
+Este repositorio contiene el código de la prueba de tecnica de la de virtual software.
+
